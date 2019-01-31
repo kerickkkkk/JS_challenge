@@ -1,6 +1,6 @@
 "use strict";
 
-var numbercolock = document.querySelector('.numbercolock');
+var numberclock = document.querySelector('.numberclock');
 var hourHand = document.querySelector('.hour-hand');
 var secondHand = document.querySelector('.second-hand');
 var minuteHand = document.querySelector('.minute-hand');
@@ -10,7 +10,7 @@ var minuteHand = document.querySelector('.minute-hand');
   var h = dt.getHours();
   var m = dt.getMinutes();
   var s = dt.getSeconds();
-  numbercolock.innerHTML = "".concat(h, " : ").concat(m, " : ").concat(s);
+  numberclock.innerHTML = "".concat(h, " : ").concat(m, " : ").concat(s);
   var hdeg = 360 / 12 * h - 90;
   hourHand.style.transform = "rotate(".concat(hdeg, "deg)");
   var mdeg = 360 / 60 * m + 180;
