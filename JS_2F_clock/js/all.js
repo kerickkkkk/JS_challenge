@@ -9,8 +9,8 @@ var minuteHand = document.querySelector('.minute-hand');
   var dt = new Date();
   var h = dt.getHours();
   var m = dt.getMinutes();
-  var s = dt.getSeconds();
-  numberclock.innerHTML = "".concat(h, " : ").concat(m, " : ").concat(s);
+  var s = dt.getSeconds(); // numberclock.innerHTML = `${h} : ${m} : ${s}`;
+
   var hdeg = 360 / 12 * h - 90;
   hourHand.style.transform = "rotate(".concat(hdeg, "deg)");
   var mdeg = 360 / 60 * m + 180;
